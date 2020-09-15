@@ -20,13 +20,14 @@ public class YashBansal extends Student implements SpecialInterestOrHobby
      * @param String l (lastname)
      * @param int r (row of seating arrangement)
      * @param int s (seat number within row seating arrangement)
-     * 
+     * @param int p (period number)
      */
-    public YashBansal(String f, String l, int r, int s) {
+    public YashBansal(String f, String l, int r, int s, int p) {
         firstName=f;
         lastName=l;
         myRow=r;
         mySeat=s;
+        myPeriod=p;
         portraitFile=f.toLowerCase()+l.toLowerCase()+".JPG";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
@@ -43,6 +44,7 @@ public class YashBansal extends Student implements SpecialInterestOrHobby
         lastName="Bansal";
         myRow=1;
         mySeat=2;
+        myPeriod=3;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".JPG";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
@@ -65,7 +67,7 @@ public class YashBansal extends Student implements SpecialInterestOrHobby
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
                 sayName(soundFile);
-            
+                
                 myHobby("I like to solve rubik's cubes");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
