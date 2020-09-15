@@ -13,6 +13,7 @@ public abstract class Student extends Actor
    public String lastName;
    public int myRow;         // rows start in the front of class (1), and end in the back of class
    public int mySeat;        // seats are left to right, 1-8
+   public int myPeriod;
    public boolean isActive;  // can you think of an algorithm that would allow you to use this
                              // variable to use keyboard entry for all the instance of a student
                              // that we will create?
@@ -29,6 +30,10 @@ public abstract class Student extends Actor
     
     public void setSeat(int s){
        mySeat=s;
+    }
+    
+    public void setPeriod(int p){
+       myPeriod=p;
     }
     
     public abstract void  getName(); //This is an abstract methods. You will have to implement it
@@ -54,6 +59,10 @@ public abstract class Student extends Actor
         return mySeat;
     }
     
+    public int GetPeriod(){
+        return myPeriod;
+    }
+    
     public void sayName(String myNameFile){
         Greenfoot.playSound(myNameFile);
     }
@@ -64,6 +73,7 @@ public abstract class Student extends Actor
     public void sitDown(){
         returnToSeat();
         setImage(portraitFile);
+        setRotation(0);
         sitting = true;
     }
         

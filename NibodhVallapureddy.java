@@ -22,11 +22,12 @@ public class NibodhVallapureddy extends Student implements SpecialInterestOrHobb
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public NibodhVallapureddy(String f, String l, int r, int s) {
-        firstName="Nibodh";
-        lastName="Vallapureddy";
-        myRow=1;
-        mySeat=1;
+    public NibodhVallapureddy(String f, String l, int r, int s, int p) {
+        firstName=f;
+        lastName=l;
+        myRow=r;
+        mySeat=s;
+        myPeriod=p;
         portraitFile="nibodhvallapureddy.jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
         standingFile="nibodhvallapureddy-standing.jpg";
         soundFile="nibodhvallapureddy.wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
@@ -42,6 +43,7 @@ public class NibodhVallapureddy extends Student implements SpecialInterestOrHobb
         lastName="Vallapureddy";
         myRow=1;
         mySeat=1;
+        myPeriod=3;
        portraitFile="nibodhvallapureddy.jpg";
        standingFile="nibodhvallapureddy-standing.jpg";
        soundFile="nibodhvallapureddy.wav";
