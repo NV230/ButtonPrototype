@@ -39,7 +39,9 @@ public class Classroom extends World
         addObject(NibodhVallapureddy, 1, 1);
         NibodhVallapureddy.sitDown();
          
-        
+        YashBansal YashBansal = new YashBansal("Yash", "Bansal", 2, 4);
+        addObject(YashBansal, 2, 4);
+        YashBansal.sitDown();
 
 
     }  
