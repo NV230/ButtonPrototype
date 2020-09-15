@@ -39,11 +39,11 @@ public class Classroom extends World
         addObject(NibodhVallapureddy, 1, 1);
         NibodhVallapureddy.sitDown();
          
-        YashBansal YashBansal = new YashBansal("Yash", "Bansal", 2, 4);
-        addObject(YashBansal, 2, 4);
+        YashBansal YashBansal = new YashBansal("Yash", "Bansal", 1, 2);
+        addObject(YashBansal, 1, 2);
         YashBansal.sitDown();
         
-        TameemSaydi TameemSaydi = new TameemSaydi("Tameem", "Saydi", 2, 4);
+        TameemSaydi TameemSaydi = new TameemSaydi("Tameem", "Saydi", 3, 2);
         addObject(TameemSaydi, 3, 2);
         TameemSaydi.sitDown();
 
